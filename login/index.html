@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falaq Nashr Online Bookshop</title>
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Login Page -->
+    <div id="login-page" class="page active-page w-full flex-grow flex flex-col justify-center items-center">
+        <div class="login-card">
+            <h1 class="login-card-logo">Falaq Nashr</h1>
+            <p class="text-gray-600 mb-6 text-center">Your online bookshop, log in to continue</p>
+            <input type="text" id="username" class="login-input" placeholder="Username">
+            <input type="password" id="password" class="login-input" placeholder="Password">
+            <p id="error-message" class="error-message hidden">Please enter both username and password.</p>
+            <button id="login-button" class="login-button">Log In</button>
+        </div>
+    </div>
+
+    <!-- Books Page -->
+    <div id="books-page" class="page w-full flex-grow">
+        <div class="books-header mx-auto">
+            <h1 class="books-header-logo">Falaq Nashr</h1>
+            <button id="logout-button" class="logout-button">Log Out</button>
+        </div>
+        <div id="books-grid" class="books-grid mx-auto">
+            <!-- Book cards will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Message Box / Modal -->
+    <div id="message-box" class="modal">
+        <!-- Modal content will be dynamically loaded here -->
+    </div>
+
+
+    <!-- Books Page -->
+    <div id="books-page" class="page w-full flex-grow">
+        <div class="books-header mx-auto">
+            <h1 class="books-header-logo">Falaq Nashr</h1>
+            <button id="logout-button" class="logout-button">Log Out</button>
+        </div>
+        <div id="books-grid" class="books-grid mx-auto">
+            <!-- Book cards will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Message Box / Modal -->
+    <div id="message-box" class="modal">
+        <!-- Modal content will be dynamically loaded here -->
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+    
+</html>
